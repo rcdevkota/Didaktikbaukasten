@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- This HTML consists of 4 input radio button with different varients to select
+1 container to show the 3d image 
+1 input field for inputing the quantity 
+1  order button -->
 <link rel="stylesheet" href="style.css" />
 <link
   rel="stylesheet"
@@ -11,7 +15,7 @@
     <title>Didaktikbaukasten</title>
   </head>
 
-
+<!-- navigation bar with logo and selector -->
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -70,23 +74,26 @@
 
 
   <body>
+    <!-- image container to render the rignt 3d image -->
     <div class="selected-image">
       <model-viewer id="selected-image" shadow-intensity="1" src="resources/image1.glb" camera-controls touch-action="pan-y"
           auto-rotate camera-controls></model-viewer>
     </div>
   </div>
-
+<!-- order quantity input field -->
   <div id="numberInput">
     <h4 for="number_input">Menge [ Max. 100 Stk.]:
       <input type="number" id="number_input" min="1" max="100" />
     </h4>
    
   </div>
-
+<!-- order button -->
     <button id="submit_button" class="btn btn-primary btn-lg btn-block" onclick="order()">Bestellen</button>
 
+  <!-- script containing all the logic for input and buttons as well to show the rignt image -->
   <script src="index.js"></script>
   </body>
+
   <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -102,6 +109,7 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"
   ></script>
+  <!-- script for calling AJAX calls to send data to database -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <!-- Import the component for tht 3d model viewer -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>

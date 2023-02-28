@@ -1,6 +1,7 @@
 var varienteName;
 var menge;
-//nimmt bild ausgabe
+//this function is called when user selects different radio buttons 
+//different 3d image is schon according to the user selection
 function displaySelected() {
 
   var image = document.querySelector('input[name="image-select"]:checked').value;
@@ -21,7 +22,10 @@ function displaySelected() {
      break;
     }
 }
-//aufruf der function nach dem bestellen butten
+//after the user selects and enters the right data and clicks the order button this function is called
+//here AJAX is used to send data from frontend to the backend server containing database 
+//
+//for further information see the server.js file
 async function  order() {
     var number_input = document.getElementById("number_input");
     menge = number_input.value;
