@@ -1,14 +1,16 @@
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const { Client } = require('pg');
 var cors = require('cors')
-
+//die ip adresse von frontend muss hier geändert werden
 var allowlist = ['http://127.0.0.1:5500']
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//Erstellt Verbindung zum Datenbank
 const client = new Client({
     host: "localhost",
     user: "postgres",
@@ -41,7 +43,7 @@ app.post('/insert', (req, res) => {
       res.status(201).send(`${result.rowCount} row(s) inserted`);
     });
 });
-
+//startet den backend server
 app.listen(3000, () => {
     console.log(`Server running at http://127.0.0.1:3000/`);
 });

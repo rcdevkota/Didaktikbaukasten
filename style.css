@@ -43,7 +43,7 @@ label {
     position: absolute;
     left: 83%; /* positions the button horizontally in the middle of the page */
     bottom: 12%; /* positions the button vertically 10px from the bottom of the page */
-
+    
   }
   #imageSelector{
     position: absolute;

@@ -1,6 +1,6 @@
 var varienteName;
 var menge;
-
+//nimmt bild ausgabe
 function displaySelected() {
 
   var image = document.querySelector('input[name="image-select"]:checked').value;
@@ -21,6 +21,7 @@ function displaySelected() {
      break;
     }
 }
+//aufruf der function nach dem bestellen butten
 async function  order() {
     var number_input = document.getElementById("number_input");
     menge = number_input.value;
