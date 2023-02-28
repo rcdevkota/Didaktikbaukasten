@@ -1,0 +1,57 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #225;
+    overflow: hidden;
+}
+.image-container {
+    display: flex;
+}
+
+label {
+    cursor: pointer;
+}
+
+.selected-image {
+    text-align: center;
+}
+
+
+
+#submit_button {
+    position: absolute;
+    left: 50%; /* positions the button horizontally in the middle of the page */
+    bottom: 5%; /* positions the button vertically 10px from the bottom of the page */
+    transform: translateX(-50%); /* centers the button horizontally in the middle of the page */
+    /* additional button styling */
+    background-color: rgb(17, 103, 241);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: x-large;
+    cursor: pointer;
+  }
+  #selected-image{
+    position: absolute;
+    left: 25%;
+   
+  width: 1200pt;
+  height: 800pt;
+
+  }
+  #numberInput{
+    position: absolute;
+    left: 83%; /* positions the button horizontally in the middle of the page */
+    bottom: 12%; /* positions the button vertically 10px from the bottom of the page */
+
+  }
+  #imageSelector{
+    position: absolute;
+    left: 30%; /* positions the button horizontally in the middle of the page *//* positions the button vertically 10px from the bottom of the page */
+    padding: 2px 4px;
+  }
+  input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "didaktikbaukasten",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.2.2",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "pg": "^8.8.0",
+    "three.js": "^0.77.1"
+  },
+  "scripts": {
+    "test": "index.js",
+    "database": "database.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

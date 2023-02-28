@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+  crossorigin="anonymous"
+/>
+<html>
+  <head>
+    <title>Didaktikbaukasten</title>
+  </head>
+
+
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="resources/logo.png" alt="" width="500" height="100" class="d-inline-block align-text-top">
+
+      </a>
+
+      <h1><span class="label label-primary">Didaktikbaukasten</span></h1>
+    </div>
+
+
+
+    <div class="image-container" id ="imageSelector">
+      <input
+        type="radio"
+        id="image1"
+        name="image-select"
+        value="resources/image1"
+        onclick="displaySelected()"
+        checked="displaySelected()"
+      /><h4 for="image3"> Einstieg- Budget    </h4>
+
+      <input
+        type="radio"
+        id="image2"
+        name="image-select"
+        value="resources/image2"
+        onclick="displaySelected()"
+      />
+      <h4 for="image2" padding =4px >  Einstieg- Hochwertig    </h4>
+
+      <input
+        type="radio"
+        id="image3"
+        name="image-select"
+        value="resources/image3"
+        onclick="displaySelected()"
+      />
+      <h4 for="image3">Vollausstattung- Budget    </h4>
+
+      <input
+        type="radio"
+        id="image4"
+        name="image-select"
+        value="resources/image4"
+        onclick="displaySelected()"
+      />
+      <h4 for="image4">Vollausstattung- Hochwertig    </h4>
+    </div>
+
+  </nav>
+
+
+  <body>
+    <div class="selected-image">
+      <model-viewer id="selected-image" shadow-intensity="1" src="resources/image1.glb" camera-controls touch-action="pan-y"
+          auto-rotate camera-controls></model-viewer>
+    </div>
+  </div>
+
+   
+   <div id="numberInput">
+      <h4 for="number_input">Anzahl:
+        <input type="number" id="number_input" min="1" max="100" />
+      </h4>
+     
+    </div>
+    <button id="submit_button" class="btn btn-primary btn-lg btn-block" onclick="order()">Bestellen</button>
+
+  <script src="index.js"></script>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- Import the component for tht 3d model viewer -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+
+</html>
